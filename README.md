@@ -1,5 +1,4 @@
 ## 📌 Project Overview
-
 This project implements an **ETL pipeline** using **Apache Airflow** to fetch NASA’s Astronomy Picture of the Day (APOD) data via API, transform it, and store it in a **PostgreSQL database** hosted on **AWS RDS**.  
 The pipeline is fully **containerized with Docker** and deployed to **Astronomer Cloud** for automated production scheduling.
 
@@ -103,4 +102,5 @@ This project is deployed to Astronomer Cloud for production orchestration.
 - Using Airflow Hooks & Operators for API and DB operations
 - Managing connections securely in Airflow
 - Dockerizing Airflow with PostgreSQL setup
+
 
