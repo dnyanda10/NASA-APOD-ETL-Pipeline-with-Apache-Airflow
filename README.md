@@ -110,6 +110,11 @@ This project is deployed to Astronomer Cloud for production orchestration.
 - Managing connections securely in Airflow
 - Dockerizing Airflow with PostgreSQL setup
 
+  ## 📄 License
+This project is licensed under the [MIT License](LICENSE) – see the LICENSE file for details.
+
+
+
 
 
 
