@@ -49,10 +49,12 @@ The following Airflow connections are configured for this project:
 
 
 ## 📜 DAG Workflow
-1 - Create Table – Ensures the apod_data table exists in Postgres.
-2 - Extract Data – Calls NASA APOD API using HttpOperator.
-3 - Transform Data – Filters and structures JSON response using TaskFlow API.
-4 - Load Data – Inserts transformed data into Postgres using PostgresHook.
+
+ - Create Table – Ensures the apod_data table exists in Postgres.
+ - Extract Data – Calls NASA APOD API using HttpOperator.
+ - Transform Data – Filters and structures JSON response using TaskFlow API.
+ - Load Data – Inserts transformed data into Postgres using PostgresHook.
+
 
 ## 🚀 Deployment to Production with Astronomer.io
 This project is deployed to Astronomer Cloud for production orchestration.
@@ -81,9 +83,11 @@ This project is deployed to Astronomer Cloud for production orchestration.
      - Use Astronomer Cloud to monitor DAG runs and adjust resources.
      
      
+     
 ## 📅 DAG Schedule
 - DAG runs daily at 10:00 UTC to retrieve the latest APOD.
 - Note: Schedule can be adjusted in the DAG's schedule_interval.
+  
   
 
 ## 🏆 Key Highlights
@@ -92,12 +96,14 @@ This project is deployed to Astronomer Cloud for production orchestration.
 - AWS RDS integration for persistence
 - Production-ready deployment via Astronomer.io
   
+  
 
 ## 🎯 Learning Outcomes
 - How to orchestrate ETL pipelines in Airflow
 - Using Airflow Hooks & Operators for API and DB operations
 - Managing connections securely in Airflow
 - Dockerizing Airflow with PostgreSQL setup
+
 
 
 
