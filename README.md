@@ -4,8 +4,8 @@ The pipeline is fully **containerized with Docker** and deployed to **Astronomer
 
 **Use Case:** Automates ingestion of NASA APOD data for analytical purposes, reporting, and visualizations.
 
-## 🛠️ Tech Stack
 
+## 🛠️ Tech Stack
 - **Apache Airflow** (via Astronomer CLI)
 - **Python**
 - **PostgreSQL** (AWS RDS)
@@ -15,7 +15,6 @@ The pipeline is fully **containerized with Docker** and deployed to **Astronomer
 
 
 ## 📂 Project Structure
-
 ```text
 .
 ├── .astro/                    # Astronomer configs
@@ -34,7 +33,6 @@ The pipeline is fully **containerized with Docker** and deployed to **Astronomer
 ```
 
 ## ⚙️ Airflow Connections Used
-
 The following Airflow connections are configured for this project:
 
 1- nasa_api
@@ -51,14 +49,12 @@ The following Airflow connections are configured for this project:
 
 
 ## 📜 DAG Workflow
-
 1 - Create Table – Ensures the apod_data table exists in Postgres.
 2 - Extract Data – Calls NASA APOD API using HttpOperator.
 3 - Transform Data – Filters and structures JSON response using TaskFlow API.
 4 - Load Data – Inserts transformed data into Postgres using PostgresHook.
 
 ## 🚀 Deployment to Production with Astronomer.io
-
 This project is deployed to Astronomer Cloud for production orchestration.
 
 ## Steps:
@@ -84,23 +80,24 @@ This project is deployed to Astronomer Cloud for production orchestration.
 5- Monitor & Scale
      - Use Astronomer Cloud to monitor DAG runs and adjust resources.
      
+     
 ## 📅 DAG Schedule
-
 - DAG runs daily at 10:00 UTC to retrieve the latest APOD.
 - Note: Schedule can be adjusted in the DAG's schedule_interval.
+  
 
 ## 🏆 Key Highlights
-
 - Fully containerized Airflow setup
 - Automated daily API data ingestion
 - AWS RDS integration for persistence
 - Production-ready deployment via Astronomer.io
+  
 
 ## 🎯 Learning Outcomes
-
 - How to orchestrate ETL pipelines in Airflow
 - Using Airflow Hooks & Operators for API and DB operations
 - Managing connections securely in Airflow
 - Dockerizing Airflow with PostgreSQL setup
+
 
 
