@@ -22,10 +22,11 @@ The following screenshot shows a sample of the data ingested into the `apod_data
 ## 📂 Project Structure
 ```text
 .
-├── .astro/                    # Astronomer configs
-├── Architecture Diagram/      # Architecture diagrams for documentation
+├── .astro/                    # Astronomer configuration files
+├── Architecture Diagram/      # Contains architecture diagrams for documentation
 ├── dags/                      # Airflow DAG scripts
 ├── tests/                     # Unit tests (if applicable)
+├── Images/                     # Sample screenshots and data visuals
 ├── .dockerignore
 ├── .env                        # Local environment variables (ignored in Git)
 ├── .gitignore
@@ -108,6 +109,7 @@ This project is deployed to Astronomer Cloud for production orchestration.
 - Using Airflow Hooks & Operators for API and DB operations
 - Managing connections securely in Airflow
 - Dockerizing Airflow with PostgreSQL setup
+
 
 
 
