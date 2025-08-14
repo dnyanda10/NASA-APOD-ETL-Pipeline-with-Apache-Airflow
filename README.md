@@ -12,6 +12,11 @@ The pipeline is fully **containerized with Docker** and deployed to **Astronomer
 - **NASA API**
 - **Docker**
 - **Astronomer Cloud**
+  
+
+  ## 🖼️ Sample Data
+The following screenshot shows a sample of the data ingested into the `apod_data` table in PostgreSQL:
+![Sample Data](Images/sample_data_airflow_project.jpg)
 
 
 ## 📂 Project Structure
@@ -103,6 +108,7 @@ This project is deployed to Astronomer Cloud for production orchestration.
 - Using Airflow Hooks & Operators for API and DB operations
 - Managing connections securely in Airflow
 - Dockerizing Airflow with PostgreSQL setup
+
 
 
 
